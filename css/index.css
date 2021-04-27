@@ -114,6 +114,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
   .container {
     padding-top: 2rem;
     padding-bottom: 2rem;
