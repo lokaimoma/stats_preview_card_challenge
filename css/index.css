@@ -15,12 +15,20 @@
   --stats-heading: hsla(0, 0%, 100%, 0.6);
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: var(--main-background);
   font-size: 15px;
   font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
 }
 
+/* Text Coloring */
 .main-heading,
 .stats {
   color: var(--main-heading);
@@ -36,4 +44,30 @@ body {
 
 .stats h2 {
   color: var(--stats-heading);
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.landing {
+  height: 50%;
+  border-radius: 10px;
+  background-color: var(--card-background);
+}
+
+.col2 img {
+  border-radius: 0 10px 10px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1,
+.col2 {
+  width: 50%;
 }
