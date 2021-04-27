@@ -12,7 +12,6 @@
   --color-accent: hsl(277, 64%, 61%);
   --main-heading: hsl(0, 0%, 100%);
   --main-paragraph: hsla(0, 0%, 100%, 0.75);
-  --stats-heading: hsla(0, 0%, 100%, 0.6);
 }
 
 img {
@@ -34,16 +33,17 @@ body {
   color: var(--main-heading);
 }
 
+.main-heading {
+  font-size: 2rem;
+}
+
 .text-primary {
   color: var(--color-accent);
 }
 
-.main-paragraph {
+.main-paragraph,
+.stats p {
   color: var(--main-paragraph);
-}
-
-.stats h2 {
-  color: var(--stats-heading);
 }
 
 .container {
@@ -53,7 +53,6 @@ body {
 }
 
 .landing {
-  height: 50%;
   border-radius: 10px;
   background-color: var(--card-background);
 }
@@ -70,4 +69,23 @@ body {
 .col1,
 .col2 {
   width: 50%;
+}
+
+.col1 {
+  align-self: center;
+  padding: 10rem 3rem;
+}
+
+.content {
+  margin-left: 2rem;
+  width: 60%;
+}
+
+.content h2 {
+  line-height: 1.3;
+}
+
+.main-heading + p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
