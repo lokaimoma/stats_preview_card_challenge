@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/lokaimoma/stats_preview_card_challenge)
-- Live Site URL: [Add live site URL here](https://lokaimoma.github.io/stats_preview_card_challenge/)
+- Solution URL: [Github](https://github.com/lokaimoma/stats_preview_card_challenge)
+- Live Site URL: [Live Site](https://lokaimoma.github.io/stats_preview_card_challenge/)
 
 ### Built with
 
