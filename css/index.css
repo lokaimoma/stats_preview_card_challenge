@@ -52,6 +52,12 @@ body {
   margin: auto;
   padding: 0 2rem;
 }
+@media (max-width: 568px) {
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 
 .landing {
   border-radius: 10px;
@@ -61,25 +67,53 @@ body {
 .col2 img {
   border-radius: 0 10px 10px 0;
 }
+@media (max-width: 568px) {
+  .col2 img {
+    border-radius: 10px 10px 0 0;
+  }
+}
 
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 568px) {
+  .flex-container {
+    flex-direction: column-reverse;
+  }
 }
 
 .col1,
 .col2 {
   width: 50%;
 }
+@media (max-width: 568px) {
+  .col1,
+  .col2 {
+    width: 100%;
+  }
+}
 
 .col1 {
   align-self: center;
   padding: 10rem 3rem;
 }
+@media (max-width: 568px) {
+  .col1 {
+    padding: 2rem 1.5rem;
+  }
+}
 
 .content {
   margin-left: 2rem;
   width: 60%;
+}
+@media (max-width: 568px) {
+  .content {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .content h2 {
@@ -87,8 +121,28 @@ body {
 }
 
 .main-heading + p {
+  line-height: 1.7;
   margin-top: 2rem;
   margin-bottom: 4rem;
+}
+
+.stats p {
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (max-width: 568px) {
+  .flex-container .stats {
+    flex-direction: column;
+  }
+
+  .stats p:not(.item-3 p) {
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .item-3 p {
+    margin-top: 0.4rem;
+  }
 }
 
 .col2 {
@@ -103,5 +157,11 @@ body {
   left: 0;
   right: 0;
   opacity: 0.5;
+  border-radius: 0 10px 10px 0;
   background-color: var(--color-accent2);
+}
+@media (max-width: 568px) {
+  .col2::before {
+    border-radius: 10px 10px 0 0;
+  }
 }
